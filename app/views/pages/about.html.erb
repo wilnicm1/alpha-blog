@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Will's Corner</title>
+    <link rel="stylesheet" href="/app/assets/stylesheets/master.css">
+  </head>
+  <body>
+    <header>
+      <nav class="myLinks">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', about_path%></li>
+        <li><%= link_to 'Current Happenings', current_path%></li>
+      </nav>
+      <div class="hugeTitle">
+        Welcome To Chill Will's Blog
+         <p>June 20th, 2018</p>
+      </div>
+
+      <div class="myimage">
+        <img src="<%= asset_path('tiepic.jpg')%>" alt="Successful men always work hard">
+      </div>
+    </header>
+    <div class="title">
+      
+      <h1>About the Man Behind the Suit</h1>
+    </div>
+    <section class="leftside">
+        <div class="container">
+          <h2>The good</h2>
+          <p> Lorum Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              put labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+    </section>
+    <section class="rightside">
+      <div class="container">
+        <h2>The Bad</h2>
+        <p>        Lorum Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                  non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
