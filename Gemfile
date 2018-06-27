@@ -38,7 +38,7 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :development do
+ 
   gem 'sqlite3', group: :development # Added development group.
   gem 'pg', group: :production # Added postgres and made it production only.
   gem 'rails_12factor'
@@ -48,11 +48,7 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
 
-group :production do
-  gem 'pg', '~> 0.11'
-  gem 'rails_12factor'
 
-end
+
 
