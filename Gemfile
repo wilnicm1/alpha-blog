@@ -38,7 +38,10 @@ group :development, :test do
 end
 
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3', group: :development # Added development group.
+  gem 'pg', group: :production # Added postgres and made it production only.
+  gem 'rails_12factor'
+
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
