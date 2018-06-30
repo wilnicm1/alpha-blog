@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'current', to: 'pages#current'
   
+  resources :articles
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
